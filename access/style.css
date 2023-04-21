@@ -37,7 +37,7 @@ body {
   margin-bottom: 1rem;
 }
 #content {
-    position: relative;
+    position: relative;  
     background-color: var(--blue);
     width: 60%;
     height: 60%;
