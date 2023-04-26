@@ -44,6 +44,9 @@ body {
   background-color: var(--white_yellow);
   color: var(--gray);
   padding: 1rem;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 #content {
     position: relative;  
