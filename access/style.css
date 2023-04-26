@@ -48,6 +48,14 @@ body {
   width: 100%;
   margin-bottom: 1rem;
 }
+#box button{
+  width: 5rem;
+  height: 3rem;
+  margin: auto;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
 #content {
     position: relative;  
     background-color: var(--blue);
