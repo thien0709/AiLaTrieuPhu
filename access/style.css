@@ -8,6 +8,13 @@
   --blue: #a6d0dd;
   --orange: #ff6969;
   --white_yellow: #fff9de;
+  --gray: #23272e;
+  --white: #d1d1d1;
+  --orange1: #f05123;
+  --blue: #03e9f4;
+  --pink: #fbc5c5;
+  --green: #00ff55;
+  --red: #e96479;
 }
 html {
   background-color: var(--white_yellow);
@@ -23,7 +30,10 @@ body {
   align-items: center;
 }
 #box {
-  display: none;
+  display: grid;
+  height: 50%;
+  width: 50%;
+  z-index: 1;
   font-family: "Courier New", Courier, monospace;
   position: absolute;
   background-color: var(--orange);
@@ -32,9 +42,8 @@ body {
 }
 #box p {
   background-color: var(--white_yellow);
-  height: 10rem;
+  color: var(--gray);
   padding: 1rem;
-  margin-bottom: 1rem;
 }
 #content {
     position: relative;  
