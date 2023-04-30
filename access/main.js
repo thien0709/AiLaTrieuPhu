@@ -1,2 +1,5 @@
+// Get button
+const btn = document.querySelector("#box button");
 // Get question
-const ques = document.querySelector
+const box = document.querySelector("#box p");
+console.log(box.textContent);
