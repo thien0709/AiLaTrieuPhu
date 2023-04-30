@@ -20,6 +20,7 @@ html {
   background-color: var(--white_yellow);
 }
 body {
+  text-align: center;
 }
 #main {
   width: 100vw;
@@ -29,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#box {
+#box{
   display: grid;
   height: 50%;
   width: 50%;
@@ -40,32 +41,44 @@ body {
   padding: 2rem;
   border-radius: 0.5rem;
 }
-#box p {
+#box .p {
   background-color: var(--white_yellow);
-  color: var(--gray);
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  font-family:'Courier New', Courier, monospace;
   padding: 1rem;
-  overflow: hidden;
   width: 100%;
   margin-bottom: 1rem;
+  border-radius: .2rem;
 }
-#box button{
+#box .answer-box input{
+  width: 60%;
+  border: none;
+  border-radius: .2rem;
+  background-color: var(--white_yellow);
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 1rem;
+}
+#box button {
   width: 5rem;
   height: 3rem;
   margin: auto;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 #content {
-    position: relative;  
-    background-color: var(--blue);
-    width: 60%;
-    height: 60%;
-    justify-content: space-between;
+  position: relative;
+  background-color: var(--blue);
+  width: 60%;
+  height: 60%;
+  justify-content: space-between;
 }
 #question {
-
 }
 #answer {
-   
 }

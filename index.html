@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,37 @@
     <link rel="shortcut icon" href="./access/" type="image/x-icon">
     <title>Ai la trieu phu</title>
 </head>
+
 <body>
     <div id="main">
         <div id="box">
-            <h2>Nhập những câu hỏi bạn muốn đặt</h2>
-            <p contenteditable = "true">//This is a question</p>
+            <h2>Nhập câu hỏi</h2>
+            <input type="text" placeholder="This is a question" class="p">
             <div class="answer-box">
-                <div class = "ans1"></div>
-                <div class = "ans2"></div>
-                <div class = "ans3"></div>
-                <div class = "ans4"></div>
+                <input type="text" placeholder="Answer 1">
+                <input type="text" placeholder="Answer 2">
+                <input type="text" placeholder="Answer 3">
+                <input type="text" placeholder="Answer 4">
             </div>
-            <button>Submit</button>
+            <div class="selection">
+                <button class="btn1">Submit</button>
+                <button class="btn2">Start</button>
+            </div>
+
         </div>
         <div id="content">
             <div id="question">
                 <h3></h3>
             </div>
             <div id="answer">
-                <div class = "ans1"></div>
-                <div class = "ans2"></div>
-                <div class = "ans3"></div>
-                <div class = "ans4"></div>
+                <div class="ans1"></div>
+                <div class="ans2"></div>
+                <div class="ans3"></div>
+                <div class="ans4"></div>
             </div>
         </div>
     </div>
     <script src="./access/main.js"></script>
 </body>
+
 </html>
