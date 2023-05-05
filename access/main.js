@@ -1,14 +1,20 @@
 // Get button submit
 const btn1 = document.querySelector("#box .btn1");
-// Get question
-const qs = document.querySelector("#box .p");
-// Get answer
-const ans = document.querySelectorAll("#box .answer-box input");
-console.log(btn1, btn2, qs, ans);
 // Record question
 let count = 1;
+let cqs = 2;
 let questions = [];
 btn1.addEventListener("click", function () {
+  const boxqs = document.querySelector("#box #boxqs"); // Get new box
+  boxqs.innerHTML = `<h2>Nhập câu hỏi ${cqs++}</h2>
+  <input type="text" placeholder="This is a question" class="p">
+  <div class="answer-box">
+      <input type="text" placeholder="Answer 1">
+      <input type="text" placeholder="Answer 2">
+      <input type="text" placeholder="Answer 3">
+      <input type="text" placeholder="Answer 4">`;
+  const qs = document.querySelector("#box .p"); // Get question
+  const ans = document.querySelectorAll("#box .answer-box input"); // Get answer
   let question = {
     stt: count++,
     qs: qs.value,
@@ -21,7 +27,13 @@ btn1.addEventListener("click", function () {
   localStorage.setItem("questions", JSON.stringify(questions));
 });
 
-
 // Get button start
 const btn2 = document.querySelector("#box .btn2");
-//
+//  Appear question
+const box = document.querySelector("#box");
+btn2.addEventListener("click", function () {
+  box.style.display = "none";
+  const questionContent = document.querySelector("#content #question");// Get question
+  const answerContent = document.querySelector("#content #answer");// Get answer
+  localStorage.getItem("qsCt",parse)
+});
