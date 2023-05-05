@@ -42,5 +42,6 @@ btn2.addEventListener("click", function () {
   box.style.display = "none";
   const questionContent = document.querySelector("#content #question");// Get question
   const answerContent = document.querySelector("#content #answer");// Get answer
-  
 });
+// Render question and answer
+
