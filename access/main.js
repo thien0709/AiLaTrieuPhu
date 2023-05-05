@@ -47,6 +47,6 @@ btn2.addEventListener("click", function () {
   let localQuestion = JSON.parse(localStorage.getItem("questions"));
   for(let i = 0 ;i <= questions.length; i++){
     questionContent.innerText = localQuestion[i].qs;
-    setTimeout(3000);
+    
   }
 });
