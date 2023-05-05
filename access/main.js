@@ -44,6 +44,9 @@ btn2.addEventListener("click", function () {
   const answerContent = document.querySelector("#content #answer");// Get answer
   ;
   // Get question in localStorage
-  let x = JSON.parse(localStorage.getItem("questions"));
-  
+  let localQuestion = JSON.parse(localStorage.getItem("questions"));
+  for(let i = 0 ;i <= questions.length; i++){
+    questionContent.innerText = localQuestion[i].qs;
+    setTimeout(3000);
+  }
 });
