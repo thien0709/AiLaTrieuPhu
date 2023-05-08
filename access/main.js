@@ -53,4 +53,5 @@ btn2.addEventListener("click", function () {
   // Render question
   for (let i = 0; i <= questions.length; i++) { 
     questionContent.innerText = localQuestion[i].qs;
+  }
 });
