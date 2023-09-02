@@ -21,7 +21,7 @@ btn1.addEventListener("click", function () {
     return;
   }
   // Create new box
-  boxqs.innerHTML = `<h2>Nhập câu hỏi ${cqs++}</h2>
+  boxqs.innerHTML = `<h2> Nhập câu hỏi ${cqs++}</h2>
   <input type="text" placeholder="This is a question" class="p">
   <div class="answer-box">
       <input type="text" placeholder="Answer 1">
